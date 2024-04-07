@@ -1,0 +1,91 @@
+@font-face {
+  font-family: test;
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+body {
+  font-family: test;
+  background-color: var(--Off-Black);
+  color: var(--White);
+}
+
+.socialLinks-section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.socialLinks-container {
+  border-radius: 10px;
+  width: 25rem;
+  background-color: var(--Dark-Grey);
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.socialLinks-img {
+  margin: 1.7rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.socialLinks-title {
+  margin: 0;
+  padding: 0;
+}
+.socialLinks-title-top {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 22px;
+}
+.socialLinks-title-down {
+  margin: 0.5rem;
+  padding: 0;
+  font-weight: 700;
+  color: var(--Green);
+  font-size: 14px;
+}
+.socialLinks-text {
+  margin: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+}
+.socialLinks-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.socialLinks-item {
+  align-items: center;
+  background-color: var(--Grey);
+  border: none;
+  margin: 1rem 2rem 0rem 2rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+  width: 70%;
+  color: var(--White);
+  font-weight: 600;
+}
+.socialLinks-item:hover{
+  background-color: var(--Green);
+  color: var(--Dark-Grey);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
